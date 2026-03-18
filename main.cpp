@@ -7,6 +7,7 @@ int main() {
   int numStudents;
   cout << "How many messages (1 - 5 are allowed)?" << endl;
   cin >> numStudents;
+  char ch;
   while (numStudents < 1 || numStudents > 5)
   {
     cout << "Invalid input, try again (enter 1 - 5) ";
@@ -17,6 +18,9 @@ int main() {
     cout << "Let me know who you are: ";
     cin >> name;
     cout << "Hello " << name << "!." << endl;
+    cout << "What can I do for you today?" << endl;
+    cin.ignore();
+    cin.get();
   }
   
   
